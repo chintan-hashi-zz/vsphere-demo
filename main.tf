@@ -42,7 +42,7 @@ resource "vsphere_virtual_machine" "test-vm" {
   folder               = vsphere_folder.cgosalia.path
   tags                 = [ vsphere_tag.tag_cgosalia.id ]
 
-  num_cpus = 4
+  num_cpus = 2
   memory   = 4096
   guest_id = data.vsphere_virtual_machine.template.guest_id
 
